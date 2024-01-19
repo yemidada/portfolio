@@ -26,7 +26,7 @@ export default function WorkScreen() {
       id: 2,
       title: ' Hair Style Application',
       about:
-        'This is a react capstone project is an adaptive web application that showcases various hairstyles and corresponding hair details sourced from an open API. Developed using React, Redux, HTML, and CSS, this project ensures a responsive user experience.',
+        'This react capstone project is an adaptive web application that showcases various hairstyles and corresponding hair details sourced from an open API. Developed using React, Redux, HTML, and CSS, this project ensures a responsive user experience.',
       codeLink: 'https://github.com/yemidada/metric-webapp',
       demoLink: 'https://hairstyles.onrender.com',
       image: HairImage,
@@ -52,8 +52,8 @@ export default function WorkScreen() {
   ];
   return (
     <>
-      <div id="works" className="header flex w-full justify-center">
-        <h2 className="font-black pb-10 mb-10 text-5xl text-blue-900 before:block before:absolute before:bg-sky-300  relative before:w-1/3 before:h-1 before:bottom-0 before:left-1/3">
+      <div id="works" className=" flex w-full justify-center items-center">
+        <h2 className="font-black pb-5 mb-5 lg:pb-10 lg:mb-10 text-2xl lg:text-5xl text-blue-900 before:block before:absolute before:bg-sky-300  relative before:w-1/3 before:h-1 before:bottom-0 before:left-1/3">
           Projects
         </h2>
       </div>

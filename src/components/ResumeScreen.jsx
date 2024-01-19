@@ -22,19 +22,17 @@ function ResumeScreen() {
         'Spearheaded the creation of a pioneering investment gaming application, successfully launched at the Nigerian Stock Exchange.',
         "Designed and implemented an asset management portal using ASP.NET language, enhancing the firm's technological capabilities.",
         "Engineered a probate management application tailored for the firm's registrar business unit, optimizing efficiency in legal processes.",
-        "Played a pivotal role as the technical mastermind behind strategy and product development, contributing to the firm's overall success.",
-        "Played a pivotal role in boosting sales by 15% through the enhancement of client experiences.- Spearheaded the creation of a pioneering investment gaming application, successfully launched at the Nigerian Stock Exchange. - Designed and implemented an asset management portal using ASP.NET language, enhancing the firm's technological capabilities. - Engineered a probate management application tailored for the firm's registrar business unit, optimizing efficiency in legal processes. - Played a pivotal role as the technical mastermind behind strategy and product development, contributing to the firm's overall success. - Innovatively developed a sub-broker portal, empowering partner brokerage firm clients to execute trades with ease and efficiency. Played a pivotal role in boosting sales by 15% through the enhancement of client experiences. ",
       ],
     },
   ];
   return (
     <div id="resume">
-      <div className="header flex w-full justify-center">
-        <h2 className="font-black pb-10 mb-10 text-5xl text-blue-900 before:block before:absolute before:bg-sky-300  relative before:w-1/3 before:h-1 before:bottom-0 before:left-1/3">
+      <div className=" flex w-full justify-center items-center">
+        <h2 className="font-black pb-5 mb-5 lg:pb-10 lg:mb-10 text-2xl lg:text-5xl text-blue-900 before:block before:absolute before:bg-sky-300  relative before:w-1/3 before:h-1 before:bottom-0 before:left-1/3">
           Experience
         </h2>
       </div>
-      <div className="w-full flex flex-col gap-12 pb-4">
+      <div className="w-full flex flex-col gap-6 lg:gap-12 pb-4">
         {works.map((work) => (
           <ExperienceWidget
             key={work.id}
