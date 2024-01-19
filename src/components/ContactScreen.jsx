@@ -24,8 +24,8 @@ function ContactScreen() {
   return (
     <div id="contact" className="w-full">
       <div>
-        <div className="header flex w-full justify-center">
-          <h2 className="font-black pb-10 mb-10 text-5xl text-blue-900 before:block before:absolute before:bg-sky-300  relative before:w-1/3 before:h-1 before:bottom-0 before:left-1/3">
+        <div className=" flex w-full justify-center items-center">
+          <h2 className="font-black pb-5 mb-5 lg:pb-10 lg:mb-10 text-2xl lg:text-5xl text-blue-900 before:block before:absolute before:bg-sky-300  relative before:w-1/3 before:h-1 before:bottom-0 before:left-1/3">
             Get in Touch
           </h2>
         </div>
@@ -38,39 +38,41 @@ function ContactScreen() {
           />
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 pt-3 gap-0 md:gap-4">
+        <div className="grid grid-cols-1 lg:grid-cols-2 pt-3 gap-0 lg:gap-4">
           <ul className="divide-y">
-            <li className=" flex justify-between items-center my-2">
+            <li className="flex flex-col lg:flex-row justify-start lg:justify-between lg:items-center my-2">
               <strong className="text-blue-900 bg-sky-300 p-2 rounded-xl w-full">
                 Address . . . . .
               </strong>
               {' '}
-              <span className="w-full text-right  p-3">Lagos, Nigeria</span>
+              <span className="w-full lg:text-right  p-3">Lagos, Nigeria</span>
             </li>
 
-            <li className=" flex justify-between items-center my-2">
+            <li className="flex flex-col lg:flex-row justify-start lg:justify-between lg:items-center my-2">
               <strong className="text-blue-900 bg-sky-300 p-2 rounded-xl w-full">
                 Phone . . . . .
               </strong>
               {' '}
-              <span className="w-full text-right  p-3">+2347039362601</span>
+              <span className="w-full lg:text-right  p-3">+2347039362601</span>
             </li>
           </ul>
 
           <ul className="divide-y">
-            <li className=" flex justify-between items-center my-2">
+            <li className="flex flex-col lg:flex-row justify-start lg:justify-between lg:items-center my-2">
               <strong className="text-blue-900 bg-sky-300 p-2 rounded-xl w-full">
                 Email . . . . .
               </strong>
               {' '}
-              <span className="w-full text-right  p-3">yemidada@gmail.com</span>
+              <span className="w-full lg:text-right  p-3">
+                <a href="mailto:yemidada@gmail.com">yemidada@gmail.com</a>
+              </span>
             </li>
-            <li className=" flex justify-between items-center my-2">
+            <li className="flex flex-col lg:flex-row justify-start lg:justify-between lg:items-center my-2">
               <strong className="text-blue-900 bg-sky-300 p-2 rounded-xl w-full">
                 Freelance . . . . .
               </strong>
               {' '}
-              <span className="w-full text-right  p-3">Available</span>
+              <span className="w-full lg:text-right  p-3">Available</span>
             </li>
           </ul>
         </div>

@@ -57,19 +57,19 @@ function Root() {
     },
   ];
   return (
-    <div className="p-12  bg-gradient-to-r from-blue-400 to-indigo-500">
+    <div className="p-4 lg:p-12  bg-gradient-to-r from-blue-400 to-indigo-500">
       <nav className="sticky top-0 z-30  border-gray-200 mb-10 text-[30px] shadow-lg rounded-2xl bg-white p-4">
         <div className="w-full mx-auto">
           <div className="mx-2 flex flex-wrap items-center justify-between">
             <img width={80} src={logo} alt="logo" />
-            <div className="flex md:hidden md:order-2">
+            <div className="flex lg:hidden lg:order-2">
               <button
                 onClick={() => {
                   setMenu((active) => !active);
                 }}
                 data-collapse-toggle="mobile-menu-3"
                 type="button"
-                className="md:hidden text-gray-400 hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-300 rounded-lg inline-flex items-center justify-center"
+                className="lg:hidden text-gray-400 hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-300 rounded-lg inline-flex items-center justify-center"
                 aria-controls="mobile-menu-3"
                 aria-expanded="false"
               >
@@ -103,10 +103,10 @@ function Root() {
             <div
               className={`${
                 !menu ? 'block' : 'hidden'
-              } md:flex justify-between items-end w-full md:w-auto md:order-1`}
+              } lg:flex justify-between items-end w-full lg:w-auto lg:order-1`}
               id="mobile-menu-3"
             >
-              <ul className="flex-col gap-4 md:flex-row flex md:space-x-12 mt-4 md:mt-0 md:text-sm md:font-medium">
+              <ul className="flex-col gap-4 lg:flex-row flex lg:space-x-12 mt-4 lg:mt-0 lg:text-sm lg:font-medium">
                 {links.map((row) => (
                   <li key={row.name}>
                     <a
@@ -114,7 +114,7 @@ function Root() {
                       onClick={() => {
                         setActive(row.name);
                       }}
-                      className="flex md:flex-col flex-row justify-start md:justify-center items-center gap-1"
+                      className="flex lg:flex-col flex-row justify-start lg:justify-center items-center gap-1"
                     >
                       {row.icon}
                       <p
@@ -133,39 +133,35 @@ function Root() {
         </div>
       </nav>
       <div className="w-full gap-5">
-        <div className="shadow-lg rounded-2xl bg-white p-6  grid grid-cols-1 md:grid-cols-12 space-x-4 gap-12 md:gap-0  md:divide-x md:divide-gray-200 md:divide-solid">
-          <div className="md:sticky md:top-24 md:h-max md:col-span-5 flex flex-col justify-center items-center gap-3">
+        <div className="shadow-lg rounded-2xl bg-white p-2 lg:p-6  grid grid-cols-1 lg:grid-cols-12 space-x-4 gap-12 lg:gap-0  lg:divide-x lg:divide-gray-200 lg:divide-solid">
+          <div className="lg:sticky lg:top-24 lg:h-max lg:col-span-5 flex flex-col justify-center items-center gap-3">
             <div className="w-[200px] rounded-full overflow-hidden">
               <img src={pic} alt="pic" />
             </div>
-            <h1 className="font-bold text-xl text-blue-900 md:block">
-              I am Adeyemi Dada
+            <h1 className="font-bold text-5xl text-blue-900 lg:block">
+              Adeyemi Dada
             </h1>
 
-            <div className="text-center text-blue-900 text-5xl pb-5">
-              <p>
-                I am skillful
-                {' '}
-                <p />
-                <TypeAnimation
-                  sequence={[
-                    'as a web designer',
-                    1000,
-                    'in ruby on rails',
-                    1000,
-                    'in postgreSQL',
-                    1000,
-                    'in mySQL',
-                    1000,
-                    'in nestjs',
-                    1000,
-                  ]}
-                  wrapper="span"
-                  className="font-bold"
-                  speed={50}
-                  repeat={Infinity}
-                />
-              </p>
+            <div className="text-center text-blue-900 text-xl pb-5">
+
+              <TypeAnimation
+                sequence={[
+                  'Am a web designer',
+                  1000,
+                  'Ruby on rails',
+                  1000,
+                  'PostgreSQL',
+                  1000,
+                  'MySQL',
+                  1000,
+                  'Nestjs',
+                  1000,
+                ]}
+                wrapper="span"
+                speed={50}
+                repeat={Infinity}
+              />
+
             </div>
 
             <div className="flex justify-center items-center gap-2">
@@ -209,14 +205,14 @@ function Root() {
                 Contact me
               </a>
               <a
-                to="#works"
+                href="#works"
                 className="inline-flex hover:ring-gray-400 hover:bg-gray-100 items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 mt-3 w-full sm:mt-0 sm:ml-3 sm:w-auto"
               >
                 See my work
               </a>
             </div>
           </div>
-          <div className="md:pl-10 md:col-span-7 overflow-y-auto ">
+          <div className="lg:pl-10 lg:col-span-7 overflow-y-auto ">
             <HomePage />
           </div>
         </div>
